@@ -1,0 +1,30 @@
+# Config for rofi-wifi-menu
+
+# position values:
+# 1 2 3
+# 8 0 4
+# 7 6 5
+POSITION=0
+
+#y-offset
+YOFF=0
+
+#x-offset
+XOFF=0
+
+# Width
+RWIDTH=50
+
+# Height
+LINENUM=9
+
+
+#fields to be displayed
+FIELDS=SSID,SECURITY,BARS
+
+# Font
+FONT="Fira Code Retina Nerd Font Complete Mono 13.0"
+
+# Theme
+THEME="~/.config/rofi/minimal.rasi"
+

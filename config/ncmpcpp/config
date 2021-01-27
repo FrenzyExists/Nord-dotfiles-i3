@@ -1,0 +1,50 @@
+####################################################
+# THE NCMPCPP SHAMELESS COPYCAT CONFIG EXPERIENCE  #
+#                                                  #
+# frenzy was here hehe                             #
+####################################################
+
+
+[mpd]
+mpd_music_dir = "/home/frenzy/Music"
+mpd_host = "127.0.0.1"
+mpd_port = "6601"
+mpd_crossfade_time = "2"
+
+
+[global]
+colors_enabled = "yes"
+progressbar_color = "yellow"
+
+
+###############
+# SONG FORMAT #
+###############
+header_visibility = "no"
+song_status_format = "{$3%a $4- $5%t}"
+#song_list_format = "{$3%a %t %b %l}"
+song_library_format = "{$3%a %t %b %l}"
+
+#################
+# GLORIOUS BARS #
+#################
+progressbar_look = "─╼·"
+
+
+###############
+# OTHER STUFF #
+###############
+allow_for_physical_item_deletion = "yes"
+titles_visibility = "no"
+
+
+##############
+# VISUALIZER #
+##############
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "fifo"
+visualizer_look = ""
+visualizer_type = "wave_filled"
+visualizer_in_stereo = "no"
+visualizer_color = red, blue, yellow, green
+

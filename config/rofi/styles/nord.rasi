@@ -1,0 +1,14 @@
+/* * * * * * * * * * * * * * * 
+ * THE NORD COLOR EXPERIENCE
+ * * * * * * * * * * * * * * */
+
+* {
+  bg:		#2E3440;
+  fg:		#E5E9F0;
+  red:		#BF616A;
+  green:	#A3BE8C;
+  yellow:	#EBCB8B;
+  blue:		#81A1C1;
+  magenta:  #B48EAD;
+  cyan:		#88C0D0;
+}

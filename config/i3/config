@@ -1,0 +1,305 @@
+#|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# 
+# Nord i3-gaps config
+#
+# By FrenzyExist
+#
+# HI, I NEED HELP, HE'S BAD AT RICING GOD NO STOP PLEASE STOP CHANGING ME, NO, NO, NOOOOOOOOOO
+#
+#|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# See https://i3wm.org/docs/userguide.html for a complete reference you fucking idiot!
+
+###########################
+# SUPER WINDOWS BUTTON!!! #
+############################
+set $mod Mod4
+
+
+#####################################
+# BACKGROUND, NO MORE FEH HA HA HA! #
+#####################################
+# TODO: Modify this using some existing script to get it automated
+# exec_always --no-startup-id xwallpaper --output eDP1 --stretch ~/Pictures/Wallpapers/nord.jpg
+exec_always --no-startup-id xwallpaper --output eDP1 --stretch ~/Pictures/test.png
+
+
+###############################################################
+# COMPOSITOR BECAUSE ALL RICES NEED ONE JUST GET FOR GOD SAKE #
+###############################################################
+exec_always --no-startup-id "picom --experimental-backends --backend glx --conf ~/.config/picom/picom.conf -b"
+
+
+#####################################
+# BACKGROUND, NO MORE FEH HA HA HA! #
+#####################################
+exec_always --no-startup-id ~/.config/polybar/launcher.sh
+
+
+
+##################################
+# NORD COLOR PALLETE FOR BORDERS #
+##################################
+client.focused    "#81A1C1" "#81A1C1" "#81A1C1" "#81A1C1" "#81A1C1"
+client.unfocused  "#BF616A" "#BF616A" "#BF616A" "#BF616A" "#BF616A"
+client.urgent	   "#F94833" "#F94833" "#F94833" "#F94833" "#F94833"
+client.placeholder  "#83A598" "#83A598" "#83A598" "#83A598" "#83A598"
+
+
+##################################
+# ENABLE AND SET BORDERS BIIIISH #
+##################################
+# N O R D Borders
+for_window [class="^.*"] border pixel 4
+for_window [title="^.*"] border pixel 4
+
+
+########################
+# GAPS, PRAISE THE GAP #
+########################
+gaps inner 15
+gaps outer 15
+gaps vertical 60
+
+# Resize the gaps
+bindsym $mod+z       gaps vertical current plus 5
+bindsym $mod+Shift+z gaps vertical current minus 5
+
+bindsym $mod+x       gaps horizontal current plus 5
+bindsym $mod+Shift+x gaps horizontal current minus 5
+
+
+########################
+# FUNCTION KEYBINDINGS #
+########################
+bindsym $mod+F1 exec --no-startup-id displayctrl HDMI-3
+
+
+########################
+# CALL IMPORTANT STUFF #
+########################
+# Call Alacritty
+bindsym $mod+Return exec kitty
+
+# Call Thunar
+bindsym $mod+m exec --no-startup-id thunar
+
+# Call Spotify
+bindsym $mod+j exec --no-startup-id spotify
+
+# Call Discord
+bindsym $mod+k exec --no-startup-id discord
+
+
+##########################
+# SUPAH ROFI MEUWU BROS! #
+##########################
+bindsym $mod+d exec "rofi -no-lazy-grab -show drun -modi run,drun,window -theme /$HOME/.config/rofi/minimal.rasi"
+
+
+##############
+# FOCUS OCUS #
+##############
+# Change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+# Move focused window (vim style)
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+
+#########################
+# VOLUME POUWAAAAAAAAAA #
+#########################
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+# bindsym XF86Search open rofi search menu like in apple :)
+
+
+###################################
+# SCREEN BACKLIGHT POUWAAAAAAAAAA #
+###################################
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+
+####################################
+# TOGGLE CLIGHT SUPAH SMORT SENSOR #
+####################################
+# bindsym $mod+Shift+c exec --no-startup ~/.config/clight/custom/toggle_clight
+
+
+#############################
+# FONTS I LOVE FONTS YAY!!! #
+#############################
+# Font for window titles.
+font pango:Museo Sans 500 11
+
+# Font for unicode glyphs, right-to-left
+font pango:FuraCode Nerd Font Retina 11
+
+
+##################
+# LOCK I3 NOW!!! #
+##################
+
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so
+# they are included here as an example. Modify as you see fit.
+
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+
+##########################################
+# "KILL DA HORE!!! BIIIIIIIIIIISH" -JJBA #
+##########################################
+bindsym $mod+Shift+q kill
+
+
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+
+##############
+# WORKSPACES #
+##############
+# Define names for default workspaces for which we configure key bindings later on.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+
+#############
+# RELOAD I3 #
+#############
+bindsym $mod+Shift+c reload
+
+
+##############
+# RESTART I3 #
+##############
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+
+####################
+# LOGOUT X-SESSION #
+####################
+#TODO: Modify this so rofi can duit
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+##################
+# RESIZE WINDOWS #
+##################
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+#################################################################
+# DISABLE I3BLOCKS IT SUCKS POLYBAR IS BETTER HA HA HA HA HA!!! #
+#################################################################
+bar {
+        workspace_buttons no
+	mode invisible
+	hidden_state hide
+}
+
