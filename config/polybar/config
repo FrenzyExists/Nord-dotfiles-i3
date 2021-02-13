@@ -1,0 +1,110 @@
+;===================================================================
+;
+;  /$$$$$$$           /$$           /$$                                     
+; | $$__  $$         | $$          | $$                                     
+; | $$  \ $$ /$$$$$$ | $$ /$$   /$$| $$$$$$$   /$$$$$$   /$$$$$$            
+; | $$$$$$$//$$__  $$| $$| $$  | $$| $$__  $$ |____  $$ /$$__  $$           
+; | $$____/| $$  \ $$| $$| $$  | $$| $$  \ $$  /$$$$$$$| $$  \__/           
+; | $$     | $$  | $$| $$| $$  | $$| $$  | $$ /$$__  $$| $$                 
+; | $$     |  $$$$$$/| $$|  $$$$$$$| $$$$$$$/|  $$$$$$$| $$                 
+; |__/      \______/ |__/ \____  $$|_______/  \_______/|__/                 
+;                         /$$  | $$                                                                                                        
+;                        |  $$$$$$/                                                                                                        
+;                         \______/                                                                                                         
+; 
+; By FrenzyExists
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;===================================================================
+
+;================================================= 
+;  _____                           _       
+; |_   _|                         | |      
+;   | | _ __ ___  _ __   ___  _ __| |_ ___ 
+;   | || '_ ` _ \| '_ \ / _ \| '__| __/ __|
+;  _| || | | | | | |_) | (_) | |  | |_\__ \
+;  \___/_| |_| |_| .__/ \___/|_|   \__|___/
+;                | |                       
+;                |_|                       
+;=================================================
+
+include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
+
+; =============================
+; ______                
+; | ___ \               
+; | |_/ / __ _ _ __ ___ 
+; | ___ \/ _` | '__/ __|
+; | |_/ / (_| | |  \__ \
+; \____/ \__,_|_|  |___/
+;
+; =============================
+
+;================================================
+; BASE BAR SUPER GENERIC THINGY
+;================================================
+[bar/base]
+enable-ipc = true
+font-0 = Rubik:style=Medium:antialias=true:size=14;3"
+font-1 = "FuraCode Nerd Font:style=Regular:size=16;3"
+font-2 = "FuraCode Nerd Font:style=Retina:size=16;3
+
+border-size = 0
+border-color = ${colors.foreground}
+height = 23
+background = ${colors.background}
+
+
+;================================================
+; WORKSPACE BAR
+;================================================
+[bar/main]
+inherit = bar/base
+width = 100%
+padding = 2
+
+background = ${colors.foreground}
+foreground = ${colors.foreground}
+modules-left = workspaces spotify indicator wlan_signal wlan_name
+modules-right = keybindings temperature cpu memory hardisk battery pulseaudio time power
+
+;tray-background = ${colors.foreground}
+;tray-position = center
+;tray-padding = 1
+
+
+
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+cursor-click = pointer
+
+border-top-size = 10
+border-color = ${colors.foreground}
+
+
+;===========================================
+;  _____      _   _   _                 
+; /  ___|    | | | | (_)                
+; \ `--.  ___| |_| |_ _ _ __   __ _ ___ 
+;  `--. \/ _ \ __| __| | '_ \ / _` / __|
+; /\__/ /  __/ |_| |_| | | | | (_| \__ \
+; \____/ \___|\__|\__|_|_| |_|\__, |___/
+;                              __/ |    
+;                             |___/     
+;===========================================
+
+[settings]
+screenchange-reload = true
+throttle-output = 5
+throttle-output-for = 10
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+                      

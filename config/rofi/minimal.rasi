@@ -48,21 +48,22 @@ configuration {
 
 window {
     border: 						4px;
-    border-color: 					@yellow;
+    border-color: 					@red;
     padding: 						15;
-    width: 							24%;
+    width: 						24%;
+    border-radius: 					16px;
 }
 
 prompt {
     spacing: 						0;
-	font: 							"FuraCode Nerd Font Regular 13";
+	font: 						"FuraCode Nerd Font Regular 13";
     text-color: 					@fg;
 }
 
 textbox-prompt-colon {
     expand: 						false;
     str: 							" ";
-    margin:							0px 4px 0px 0px;
+    margin:						0px 4px 0px 0px;
     text-color: 					inherit;
 }
 
@@ -85,14 +86,14 @@ inputbar {
 
 mainbox {
     border: 						0px;
-    border-color: 					@yellow;
+    border-color: 					@red;    
     padding: 						6;
 }
 
 listview {
     fixed-height: 					0;
     border: 						0px;
-    border-color: 					@yellow;
+    border-color: 					@red;
     spacing: 						4px;
     scrollbar: 						false;
     padding: 						5px 5px 0px 5px;
@@ -141,7 +142,7 @@ element alternate.active {
 
 sidebar {
     border:       					0px;
-    border-color: 					@yellow;
+    border-color: 					@red;
     border-radius: 					0px;
 }
 
@@ -152,11 +153,13 @@ button {
     text-color: 					@bg;
     border: 						0px;
     border-color: 					@fg;
+    border-radius: 					6px;
 }
 
 button selected {
-    background-color:             	@yellow;
+    background-color:             	@red;
     text-color: 					@bg;
+    border-radius: 					6px;
 }
 
 scrollbar {
@@ -169,7 +172,7 @@ scrollbar {
 
 message {
     border: 						4px;
-    border-color: 					@yellow;
+    border-color: 					@red;
     padding: 						1px;
 }
 

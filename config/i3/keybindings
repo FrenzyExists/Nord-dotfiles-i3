@@ -1,0 +1,110 @@
+
+FRENZY BINDINGS
+
+--> to update this run the following command:
+wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/keybindings -P ~/.config/i3/
+
+All sources and updates are available at GitHub:
+https://github.com/endeavouros-team/i3-EndeavourOS
+
+For reference consult our WIKI:
+https://endeavouros.com/docs/window-tiling-managers/i3-wm/
+
+$mod = windows key
+
+--> Use Mouse+$mod to drag floating windows to their wanted position
+Mouse+$mod
+
+--> start a terminal
+$mod+Return
+
+--> kill focused window (exit / terminate)
+$mod+c
+
+---> open keybindings overview
+$mod+F1
+
+$mod+enter --> open terminal (xfce4-terminal)
+$mod+w --> open Browser (firefox)
+$mod+n --> open Filebrowser (Thunar)
+$mod+i // F9 --> app menu (rofi -- nice menu)
+$mod+o // F10 --> chooe open windows over menu (rofi -- nice menu)
+Print-key --> screenshot
+
+--> start dmenu (a program launcher)
+$mod+d
+
+--> change focus
+$mod+j --> focus left
+$mod+k -->  focus down
+$mod+u --> focus up
+$mod+ntilde --> focus right
+
+--> alternatively, you can use the cursor keys:
+$mod+Left --> focus left
+$mod+Down --> focus down
+$mod+Up --> focus up
+$mod+Right --> focus right
+
+or:
+$mod+Shift+Left --> move left
+$mod+Shift+Down --> move down
+$mod+Shift+Up --> move up
+$mod+Shift+Right --> move righ
+
+--> move focused window
+$mod+Shift+j --> move left
+$mod+Shift+k --> move down
+$mod+Shift+l --> move up
+$mod+Shift+ntilde --> move right
+
+--> resize floating windows with mouse scroll:
+$mod+button4 resize shrink height
+$mod+button5 resize grow height
+$mod+shift+button4 resize shrink width
+$mod+shift+button5 resize grow width
+
+ -->  split in horizontal orientation
+$mod+h  --> split h
+
+ --> split in vertical orientation
+$mod+v  --> split v
+
+ --> enter fullscreen mode for the focused container
+$mod+f --> fullscreen toggle
+
+ --> change container layout (stacked, tabbed, toggle split)
+$mod+Shift+s  --> layout stacking
+$mod+Shift+w  --> layout tabbed
+$mod+Shift+e  --> layout toggle split
+
+ --> toggle tiling / floating
+$mod+Shift+space --> floating toggle
+
+--> change focus between tiling / floating windows
+$mod+space --> focus mode_toggle
+
+--> focus the parent container
+$mod+a --> focus parent
+
+--> switch to --> workspace
+$mod+1 --> workspace 1
+$mod+2 --> workspace 2
+$mod+3 --> workspace 3
+$mod+4 --> workspace 4
+$mod+5 --> workspace 5
+$mod+6 --> workspace 6
+
+--> --> move focused container to --> workspace
+$mod+Shift+1 --> move container to --> workspace 1
+$mod+Shift+2 --> move container to --> workspace 2
+$mod+Shift+3 --> move container to --> workspace 3
+$mod+Shift+4 --> move container to --> workspace 4
+$mod+Shift+5 --> move container to --> workspace 5
+$mod+Shift+6 --> move container to --> workspace 6
+
+--> reload the configuration file
+$mod+Shift+c --> reload
+
+--> restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+$mod+Shift+r --> restart
