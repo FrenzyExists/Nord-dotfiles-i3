@@ -18,8 +18,9 @@ Hope you guys like it! Kinda finished this days before an exam I kinda didn't pa
 
 <h3>Some Details about my setup...</h3>
 
-
-
+<p align="center">
+  <img src="Screenshot/presentation-2.png">
+</p>
 
 
 - **WM**                            : [i3](https://github.com/FrenzyExists/Nord-dot-files-i3/tree/main/config/i3) :art: What da heck you expect?
@@ -39,45 +40,25 @@ Hope you guys like it! Kinda finished this days before an exam I kinda didn't pa
 - **Picture**                       : [sxiv](https://wiki.archlinux.org/index.php/sxiv) r
 - **Video Player**                  : [mpv](https://wiki.archlinux.org/index.php/Mpv) r
 - **Media Controller**              : [playerctl](https://github.com/altdesktop/playerctl) r
-
-
-<p align="center">
-  <img src="Screenshot/presentation-2.png">
-</p>
-
+- **Cursor**                        : [nord-oreo](https://github.com/0jdxt/oreo-nord-cursors)
 
 
 <p align="center">
   <img src="Screenshot/rice.png">
 </p>
 
-
 <p align="center">
   <img src="Screenshot/rice-2.png">
 </p>
-
-
-
 
 ### Google Chrome Exensions
 Dark Reader
 Scrollbar Customizer (to disable Scrollbars) https://chrome.google.com/webstore/detail/scrollbar-customizer/
 
-### Cursor
-Oreo Nord Cursors by 0jdxt  https://github.com/0jdxt/oreo-nord-cursors
-
 ### Mousepdad and Keyboard
 I pretty much used the configuration explained here https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/ and applied it to /etc/X11/xorg.conf.d/
 Creddit for configuration goes for Cody Craven :)2
 
-
-### My MPD | NCMPCPP
-
-I'm still somewhat a novice boi, so I try to not go into a rabbit-hole of customizations. I instead learned the commands, which you could find:
-
-
-
- here https://pkgbuild.com/~jelle/ncmpcpp/
 
 Also yeah, I use spotify, shut up
 
@@ -104,13 +85,17 @@ Bars are heavily inspired on [] dotfiles!
 https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord
 
 ## Shameless Plug :v
+---
+### :computer: Visit my Website :D
 
-### Visit my Website :D
+### :star: Smash the Star Button
 
-### Smash the Star Button
-
-### Steal my dots!!!!
+### :rice: Steal my dots!!!!
 
 
+## TODO:
+---
+- [ ] Add Scheme switch script
+- [ ] Glorify theme
+- [ ] Profit (hehe)
 
-TODO MAKE A ROFI MENU THAT TELLS YOU ALL THE COMMANDS OF AN SPECIFIC APP SO UR SMALL MEM DOESN'T HAVE TO REMEMBER YOU FUCKING SHORT RAM
