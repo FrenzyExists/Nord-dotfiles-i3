@@ -26,25 +26,25 @@ Hope you guys like it! Kinda finished this days before an exam I kinda didn't pa
 
 <img src="Screenshot/nord-icon.png" alt="neofetch" align="right" height="250px">
 
-- **WM**                            : [i3](https://github.com/FrenzyExists/Nord-dot-files-i3/tree/main/config/i3) :art: What da heck you expect?
+- **WM**                            : [i3](https://github.com/FrenzyExists/Nord-dot-files-i3/tree/main/config/i3) lul :bento:
 - **DM***                           : [Lightdm](https://wiki.archlinux.org/index.php/LightDM) 🍃 Currently the default one lul
-- **Shell**                         : [zsh](https://wiki.archlinux.org/index.php/zsh) 0
-- **Terminal**                      : [Alacritty](https://github.com/alacritty/alacritty) & [Kitty](https://github.com/kovidgoyal/kitty). Yes, I dual terminal, fight me
-- **Bar**                           : [Polybar](https://github.com/polybar/polybar) r
-- **Compositor**                    : [picom](https://github.com/yshui/picom)  r
-- **Text Editor**                   : [nvim](https://github.com/neovim/neovim) r
+- **Shell**                         : [zsh](https://wiki.archlinux.org/index.php/zsh) :wrench:
+- **Terminal**                      : [Alacritty](https://github.com/alacritty/alacritty) & [Kitty](https://github.com/kovidgoyal/kitty). :framed_picture: Yes, I dual terminal, fight me
+- **Bar**                           : [Polybar](https://github.com/polybar/polybar) 🍫
+- **Compositor**                    : [picom](https://github.com/yshui/picom) 🎇 
+- **Text Editor**                   : [nvim](https://github.com/neovim/neovim) 🗒
 - **Music Player**                  : [cmus](https://wiki.archlinux.org/index.php/Cmus)
-- **Wallpaper Manager**             : [nitrogen](https://wiki.archlinux.org/index.php/Nitrogen) r
-- **Notify Daemon**                 : [dunst](https://wiki.archlinux.org/index.php/Dunst) r
-- **File Manager**                  : [ranger](https://github.com/neovim/neovim) r
-- **Application Launcher**          : [rofi](https://github.com/davatorium/rofi) r
-- **Code Editor**                   : [Vscode](https://code.visualstudio.com/) r
-- **Backlight**                     : [xbacklight](https://wiki.archlinux.org/index.php/Backlight) r
+- **Wallpaper Manager**             : [nitrogen](https://wiki.archlinux.org/index.php/Nitrogen) :art:
+- **Notify Daemon**                 : [dunst](https://wiki.archlinux.org/index.php/Dunst) 📋
+- **File Manager**                  : [ranger](https://github.com/ranger/ranger) 📁
+- **Application Launcher**          : [rofi](https://github.com/davatorium/rofi) 🎒
+- **Code Editor**                   : [Vscode](https://code.visualstudio.com/) 
+- **Backlight**                     : [xbacklight](https://wiki.archlinux.org/index.php/Backlight) :sun:
 - **Picture**                       : [sxiv](https://wiki.archlinux.org/index.php/sxiv) r
-- **Video Player**                  : [mpv](https://wiki.archlinux.org/index.php/Mpv) r
-- **Media Controller**              : [playerctl](https://github.com/altdesktop/playerctl) r
-- **Cursor**                        : [nord-oreo](https://github.com/0jdxt/oreo-nord-cursors) r
-- **Spicetify**                     : [nord-theme](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord)
+- **Video Player**                  : [mpv](https://wiki.archlinux.org/index.php/Mpv) :movie_camera:
+- **Media Controller**              : [playerctl](https://github.com/altdesktop/playerctl) :control_knobs:
+- **Cursor**                        : [nord-oreo](https://github.com/0jdxt/oreo-nord-cursors) 🐭
+- **Spicetify**                     : [nord-theme](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord) 🎵
 
 <p align="center">
   <img src="Screenshot/presentation-3.png">
