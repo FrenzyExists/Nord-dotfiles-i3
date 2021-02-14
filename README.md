@@ -1,16 +1,36 @@
-# The Nord i3 Experience
 
+<p align="center">
+  <img src="Screenshot/presentation-1.png">
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/%3F-Yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/adi1090x/rofi?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/adi1090x/rofi?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/FrenzyExists/Nord-dot-files-i3?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/adi1090x/rofi?color=violet&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/adi1090x/rofi?color=teal&style=for-the-badge">
 </p>
 
-
 After being for some time in good ol Gruvbox Dark Theme, I decided it was time to move on, as a way to start the new year. This is a minimal build, I am an i3 virgin...
 
+<p align="center">
+  <img src="Screenshot/presentation-2.png">
+</p>
+
+
+
+
+
+
+<p align="center">
+  <img src="Screenshot/rice-1.png">
+</p>
+
+
+
+
+<p align="center">
+  <img src="Screenshot/rice-2.png">
+</p>
 
 ## Requisites
 i3 (I mean, wtf you expect?)
@@ -42,7 +62,7 @@ Oreo Nord Cursors by 0jdxt  https://github.com/0jdxt/oreo-nord-cursors
 
 ### Mousepdad and Keyboard
 I pretty much used the configuration explained here https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/ and applied it to /etc/X11/xorg.conf.d/
-Creddit for configuration goes for Cody Craven :)
+Creddit for configuration goes for Cody Craven :)2
 
 
 ### My MPD | NCMPCPP
