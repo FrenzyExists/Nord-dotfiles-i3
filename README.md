@@ -36,9 +36,9 @@ Hope you guys like it! Kinda finished this days before an exam I kinda didn't pa
 - **Notify Daemon**                 : [dunst](https://wiki.archlinux.org/index.php/Dunst) 📋
 - **File Manager**                  : [ranger](https://github.com/ranger/ranger) 📁
 - **Application Launcher**          : [rofi](https://github.com/davatorium/rofi) 🎒
-- **Code Editor**                   : [Vscode](https://code.visualstudio.com/) 
-- **Backlight**                     : [xbacklight](https://wiki.archlinux.org/index.php/Backlight) :sun:
-- **Picture**                       : [sxiv](https://wiki.archlinux.org/index.php/sxiv) r
+- **Code Editor**                   : [Vscode](https://code.visualstudio.com/) 🤖 
+- **Backlight**                     : [xbacklight](https://wiki.archlinux.org/index.php/Backlight) ☀
+- **Picture**                       : [sxiv](https://wiki.archlinux.org/index.php/sxiv) 🖼
 - **Video Player**                  : [mpv](https://wiki.archlinux.org/index.php/Mpv) :movie_camera:
 - **Media Controller**              : [playerctl](https://github.com/altdesktop/playerctl) :control_knobs:
 - **Cursor**                        : [nord-oreo](https://github.com/0jdxt/oreo-nord-cursors) 🐭
@@ -64,7 +64,7 @@ Creddit for configuration goes for Cody Craven :)2
 
 Also yeah, I use spotify, shut up
 
-## Shameless Plug :v
+## 🔌 Shameless Plug 🔌
 ---
 ### :computer: Visit my Website :D
 

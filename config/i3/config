@@ -41,6 +41,9 @@ exec --no-startup-id nitrogen --restore
 ######################
 exec_always --no-startup-id ~/.config/polybar/launcher.sh
 
+# exec_always --no-startup-id "conky -c ~/.config/conky/todo.conf"
+exec_always --no-startup-id "conky -c ~/.config/conky/time.conf"
+
 
 ############################
 # QUASI ALTERNATING LAYOUT #
