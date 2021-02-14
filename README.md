@@ -3,11 +3,9 @@
   <img src="Screenshot/presentation-1.png">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/%3F-Yes-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/adi1090x/rofi?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/FrenzyExists/Nord-dot-files-i3?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/adi1090x/rofi?color=violet&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/adi1090x/rofi?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/FrenzyExists/Nord-dot-files-i3?color=violet&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/FrenzyExists/Nord-dot-files-i3?color=teal&style=for-the-badge">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge">
 <h3>:shipit: Oh Hello There! </h3>
 
