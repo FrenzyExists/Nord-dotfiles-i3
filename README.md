@@ -24,7 +24,7 @@ Hope you guys like it! Kinda finished this days before an exam I kinda didn't pa
   <img src="Screenshot/presentation-2.png">
 </p>
 
-<img src="Screenshots/nord-icon.png" alt="neofetch" align="right" height="250px">
+<img src="Screenshot/nord-icon.png" alt="neofetch" align="right" height="250px">
 
 - **WM**                            : [i3](https://github.com/FrenzyExists/Nord-dot-files-i3/tree/main/config/i3) :art: What da heck you expect?
 - **DM***                           : [Lightdm](https://wiki.archlinux.org/index.php/LightDM) 🍃 Currently the default one lul
