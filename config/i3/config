@@ -275,10 +275,10 @@ exec_always --no-startup-id "picom --conf ~/.config/picom/picom.conf -b"
 ##########################
 
 # Copy to clipboard
-bindsym $mod+p exec "maim -u -s | xclip -selection clipboard -t image/png"
+bindsym $mod+p exec "bash ~/.config/i3/scripts/screenshot.sh --mode copy"
 
 # Save Screenshot
-bindsym $mod+shift+p exec "maim -u -s ~/Pictures/Screenshots/$(date +%s).png"
+bindsym $mod+shift+p exec "bash ~/.config/i3/scripts/screenshot.sh --mode save"
 
 
 # get auth work with polkit-gnome:

@@ -3,10 +3,10 @@
   <img src="Screenshot/presentation-1.png">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/github/stars/FrenzyExists/Nord-dot-files-i3?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/FrenzyExists/Nord-dot-files-i3?color=violet&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/FrenzyExists/Nord-dot-files-i3?color=teal&style=for-the-badge">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge">
+  <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/stargazers"><img src="https://img.shields.io/github/stars/FrenzyExists/Nord-dot-files-i3?colorA=4c566a&colorB=BF616A&style=for-the-badge&logo=starship"></a>
+  <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/issues"><img src="https://img.shields.io/github/issues/FrenzyExists/Nord-dot-files-i3?colorA=4c566a&colorB=88C0D0&style=for-the-badge&logo=bugatti"></a>
+  <a href="https://github.com/Axarva/dotfiles-2.0/network/members"><img src="https://img.shields.io/github/forks/Axarva/dotfiles-2.0?colorA=4c566a&colorB=BF616A&style=for-the-badge&logo=hacker"></a>
+
 <h3>:shipit: Oh Hello There! </h3>
 
 ---
@@ -79,3 +79,7 @@ Also yeah, I use spotify, shut up
 - [ ] Glorify theme
 - [ ] Profit (hehe)
 
+
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/nord/repository-footer-separator.svg?sanitize=true" /></p>
+
+<p align="center"><a href="https://github.com/Axarva/dotfiles-2.0/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange.svg?colorA=4c566a&colorB=88c0d0&style=for-the-badge&logo=mitsubishi"></a></p>

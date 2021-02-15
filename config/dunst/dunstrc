@@ -250,21 +250,13 @@
 [cmus]
     appname = cmus
 	format = "Now Playing:\n%b"
- 
-
-
-[maim]
-	appname = maim
-	format = "Screenshot taken!"
-	timeout = 8
-	icon        = "/home/frenzy/.config/dunst/icons/screenshot.svg"
 
 [Discord]
 appname = Discord
 format = "Discord\n%s\n%b"
 
 
-/[spotify]
+[spotify]
     # The format of the message.  Possible variables are:
     #   %a  appname
     #   %s  summary
