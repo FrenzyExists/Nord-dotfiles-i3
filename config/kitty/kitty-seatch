@@ -1,0 +1,2 @@
+#!/bin/sh
+exec kitty +kitten hyperlinked_grep "$@"
