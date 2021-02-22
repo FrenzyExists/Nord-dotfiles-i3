@@ -129,13 +129,9 @@ Creddit for configuration goes for Cody Craven :)2
 
 Also yeah, I use spotify, shut up
 
-## 🔌 Shameless Plug 🔌
----
-### :computer: Visit my Website :D
-
-### :star: Smash the Star Button
-
-### :rice: Steal my dots!!!!
+<p align="center">
+  <img src="Screenshot/presentation-6.png">
+</p>
 
 
 ## TODO 🗒
@@ -148,55 +144,3 @@ Also yeah, I use spotify, shut up
 
 <p align="center"><a href="https://github.com/Axarva/dotfiles-2.0/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange.svg?colorA=4c566a&colorB=88c0d0&style=for-the-badge&logo=mitsubishi"></a></p>
 
-
-
-
-
-AND DON'T FORGET TO READ WHAT'S WRITTEN AT THE END OF THE MAIN INSTALLATION SECTION [UP THERE](#inst). Further steps are specified there. (Yes. Absolutely needs to be shouty capitals.)
-<a id="deps"></a>
-## Dependencies 📊
-Ahhhhh the other main stuff. Here you go, peeps. Make sure you have em all.
-
--    xmonad (OF COURSE, DUH)
--    eww (ElKowar's Wacky Widgets, binary included, but I encourage you to build it yourself and put the binary in your ~/bin). [Link](https://github.com/elkowar/eww)
--    firefox (Yup)
--    rofi version 1.6.0 (Configs originally come from @adi1090x, been edited by me).
--    tint2 (Install using package manager, other binary from my fork is provided)
--    acpi
--    Museo Sans Font by Adobe (I think it needs some sort of acount, but get it) Or just search for it on the web and get it somewhere
--    ~~Any Nerd Font, Iosevka recommended along with Hurmit.~~ Nerd Fonts now included in folder. [Link](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) 
--    playerctl
--    brightnessctl. [Link](https://github.com/Hummer12007/brightnessctl)
--    OpenRC (Wait a sec, yep, remember to edit the powermenu files if you use systemd)
--    candy-icons. [Link](https://github.com/EliverLara/candy-icons)
--    dunst
--    Spotify (for cover art, else edit the eww/scripts/getart script accordingly)
--    An OpenWeatherMap Account, (view eww/scripts/getweather script for more info)
--    feh
--    NetworkManager
--    zsh (THIS IS IMPORTANT)
--    alacritty
--    picom (fork of ibhagwan or jonaburg)
--    doas- wait, just replace doas occurences with sudo, or go macho and install doas
--    jq: Command line json parser (Needed for widgets)
--    maim and xclip for screenshots
--    mpv for low-battery sound playing (Not exactly necessary, you'll get the notification, but the sound depends on it.)
--    *Might need to be updated, so please tell me*
-
-<a id="trouble"></a>
-## Troubleshooting 🔫
-And here we are:
-
-
-1. If xmonad doesn't build make sure you have `xmonad-contrib`
-2. Bar looks weird: Try editing it a bit using `tint2conf`. 
-3. Alacritty configs are faulty: I'm not sure about this one, works perfectly fine for me. 
-4. Widgets positioning weird: I hardcoded them for a 1366x768 screen, will create others if I can
-5. Fonts: GET THOSE FONTS!
-6. **MAKE SURE YOUR `~/bin` DIRECTORY IS IN YOUR PATH, OR NOTHING WILL WORK!** (Yes. Absolutely needs to be shouty capitals.)
-7. Anything else? Open up an issue.
-8. Workspace indicator bar lost colors: This has a very long explanation, but the fix is as follows:
-   - Open up the `~/.config/tint2/workspaces.tint2rc` file, and scroll down to the taskbar module at around line 120
-   - Add this line in that block: `taskbar_name_unoccupied_font_color = #ffd5cd 100`
-   - Save the file, and refresh the bar with hitting the keybind `Win + B` twice.
-   - Remember not to edit that particular file with `tint2conf`, or you'll have to do this again!
