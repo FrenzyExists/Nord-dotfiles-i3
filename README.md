@@ -96,7 +96,7 @@ Don't rice for unique complicated workflow, rice for simple human workflow
 
 
 <p align="center">
-  <img src="https://github.com/Axarva/gifs/blob/main/workflow.gif">
+  <img src="bruh.gif" alt="yeag something goes here">
 </p>
 
 [Workflow Video by SavvyNik](https://www.youtube.com/watch?v=rMoUCnqhYfs) aka [@SavvyNik](https://github.com/SavvyNik)
