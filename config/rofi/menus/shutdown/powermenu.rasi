@@ -41,6 +41,7 @@ window {
     padding: 						15;
     width: 							24%;
     x-offset:                       0;
+    border-radius:                  16px;
     y-offset:                       0;
 }
 
