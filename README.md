@@ -96,11 +96,7 @@ Don't rice for unique complicated workflow, rice for simple human workflow
   <img src="bruh.gif" alt="yeag something goes here">
 </p>
 
-[Workflow Video by SavvyNik](https://www.youtube.com/watch?v=rMoUCnqhYfs) aka [@SavvyNik](https://github.com/SavvyNik)
-
-
-[Workflow Video by Guilherme Moreno](https://www.youtube.com/watch?v=im9QKZSMUFQ) aka [@morenoled](https://github.com/morenoled)
-
+# Will soon add a vid screencapture when I figure out how 🤦
 <br>
 
 <p align="center">
