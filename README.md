@@ -88,12 +88,9 @@ Note: `Win` refers to the `Super` key.
 <a id="workflow"></a>
 
 ## Workflow 🖨️
-Below there's some gifs in regards of my workflow (kinda). My philosophy in such regard is this:
+# 🚧 STILL IN CONSTRUCTION LUL 🚧
 
 Don't rice for unique complicated workflow, rice for simple human workflow
-
-(Also, compression made it look kinda bad, but I think it shows what it needs to)
-
 
 <p align="center">
   <img src="bruh.gif" alt="yeag something goes here">
@@ -121,10 +118,7 @@ Don't rice for unique complicated workflow, rice for simple human workflow
 </p>
 
 ### Mousepdad and Keyboard
-I pretty much used the configuration explained here https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/ and applied it to /etc/X11/xorg.conf.d/
-Creddit for configuration goes for Cody Craven :)2
-
-
+I pretty much used the configuration explained by [Cody Craven ](https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/) and applied it to `/etc/X11/xorg.conf.d/`
 
 
 Also yeah, I use spotify, shut up

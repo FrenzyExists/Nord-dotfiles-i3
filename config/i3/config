@@ -27,6 +27,12 @@
 set $mod Mod4
 
 
+#############################
+# CHANGE DA KEYBINDINGS PLZ #
+#############################
+exec --no-startup-id setxkbmap -layout us -variant altgr-intl
+
+
 #####################################
 # BACKGROUND, NO MORE FEH HA HA HA! #
 #####################################
@@ -41,9 +47,10 @@ exec --no-startup-id nitrogen --restore
 ######################
 exec_always --no-startup-id ~/.config/polybar/launcher.sh
 
-# exec_always --no-startup-id "conky -c ~/.config/conky/todo.conf"
+#####################
+# CONKY CONKY CONKY #
+#####################
 exec_always --no-startup-id "conky -c ~/.config/conky/time.conf"
-
 
 ############################
 # QUASI ALTERNATING LAYOUT #
@@ -77,18 +84,20 @@ gaps outer 15
 # Call Kitty (terminal)
 bindsym $mod+Return exec kitty
 
+# Call Alacritty (yes, another terminal, shut up)
+bindsym $mod+Shift+Return exec alacritty
+
 # Call Firefox
 bindsym $mod+w exec "/usr/bin/firefox"
 
-# Call Thunar
-bindsym $mod+t exec "/usr/bin/thunar"
+# Call Ranger
+bindsym $mod+t exec "kitty /usr/bin/ranger"
 
 # Call Spotify
 bindsym $mod+m exec "/usr/bin/spotify"
 
 # Call VSCODE
 bindsym $mod+c exec "/usr/bin/code-oss"
-
 
 ##############
 # FOCUS OCUS #
@@ -127,10 +136,10 @@ bindsym $mod+Shift+Right move right
 # HOW TO SPLIT IN CASE U WANT MANUAL OR FIX #
 #############################################
 # split in horizontal
-bindsym $mod+Shift+b split h
+bindsym $mod+b split h
 
 # split in vertical
-bindsym $mod+Shift+v split v
+bindsym $mod+v split v
 
 
 ###########################
@@ -178,51 +187,37 @@ floating_modifier $mod
 # BIND PROGRAM TO WORKSPACE #
 #############################
 
-# Terminal
-assign [class="Alacritty"] 		$ws2
-for_window [class=Alacritty] 		focus
-
-assign [class="kitty"] 			$ws2
-for_window [class=kitty] 		focus
-
 # Browser
 assign [class="(?i)firefox"] 		$ws1
 for_window [class=(?i)firefox] 		focus
 
 # File Manager
-assign [class="Thunar"] 		$ws3
-for_window [class=Thunar] 		focus
+assign [class="Thunar"] 			$ws3
+for_window [class=Thunar] 			focus
 
-assign [class="ranger"] 		$ws3
-for_window [class=ranger] 		focus
+assign [class="kitty /usr/bin/kitty"] 			$ws3
 
 # Coding
-assign [class="eclipse"] 		$ws7
-for_window [class=eclipse] 		focus
+assign [class="eclipse"] 			$ws7
+for_window [class=eclipse] 			focus
 
-assign [class="code"] 			$ws7
-for_window [class=code] 		focus
+assign [class="code"] 				$ws7
+for_window [class=code] 			focus
 
-assign [class="eclipse"]                $ws7
-for_window [class=eclipse]              focus
+assign [class="eclipse"]            $ws7
+for_window [class=eclipse]          focus
 
-assign [class="idea"]                   $ws7
-for_window [class=idea]                 focus
-
-# Chat 
-assign [class="TelegramDesktop"] 	$ws5
-for_window [class=TelegramDesktop] 	focus
+assign [class="idea"]               $ws7
+for_window [class=idea]             focus
 
 assign [class="Discord"]        	$ws5
-for_window [class=Discord]      	focus
 
 # Music
 assign [class="Spotify"]        	$ws4
 for_window [class=spotify]      	focus
 
 # Read Books
-assign [class="zathura"]  	      	$ws5
-for_window [class=zathura]      	focus
+assign [class="Zathura"]  	      	$ws5
 
 
 ###################################################
@@ -261,7 +256,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ###########################
 # LOG I3 ROFI MENU THINGY #
 ###########################
-bindsym $mod+Shift+q exec ~/.config/i3/scripts/shutdown_menu -p rofi -c
+bindsym $mod+Shift+q exec ~/.config/rofi/menus/shutdown/powermenu.sh
 
 
 ###############################################################
@@ -359,7 +354,7 @@ bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
-
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # dex execute .desktop files:
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart
@@ -389,6 +384,10 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Nitrogen"] floating disable
+for_window [class="nmtui"] floating enable
+for_window [class="nmtui-connect"] floating enable
+for_window [class="nmtui-edit"] floating enable
+for_window [class="nmtui-hostname"] floating enable
 
 # resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -489,7 +488,7 @@ mode "$mode_gaps_outer" {
 ############################
 # LOCK DA COMPUTAAAAAAA!!! #
 ############################
-#bindsym $mod+shift+e exec i3lock -i ~/.config/i3/i3-lock-screen.png -t -f
+bindsym $mod+u exec "zsh ~/.config/i3/scripts/lock.sh"  
 
 
 #################################################################
