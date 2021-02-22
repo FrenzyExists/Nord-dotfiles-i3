@@ -117,6 +117,15 @@ Don't rice for unique complicated workflow, rice for simple human workflow
 I pretty much used the configuration explained by [Cody Craven ](https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/) and applied it to `/etc/X11/xorg.conf.d/`
 
 
+<p align="center">
+  <img src="Screenshot/presentation-5.png">
+</p>
+
+I Use FuraCode Nerd Fonts for the icons and Rubik for everything
+
+
+___
+<br>
 Also yeah, I use spotify, shut up
 
 <p align="center">
