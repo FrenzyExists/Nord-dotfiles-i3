@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/stargazers"><img src="https://img.shields.io/github/stars/FrenzyExists/Nord-dot-files-i3?colorA=4c566a&colorB=BF616A&style=for-the-badge&logo=starship"></a>
   <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/issues"><img src="https://img.shields.io/github/issues/FrenzyExists/Nord-dot-files-i3?colorA=4c566a&colorB=88C0D0&style=for-the-badge&logo=bugatti"></a>
-  <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/network/members"><img src="https://img.shields.io/github/forks/Axarva/dotfiles-2.0?colorA=4c566a&colorB=BF616A&style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/FrenzyExists/Nord-dot-files-i3/network/members"><img src="https://img.shields.io/github/forks/FrenzyExists/Nord-dot-files-i3?colorA=4c566a&colorB=BF616A&style=for-the-badge&logo=github"></a>
 
 <h3>:shipit: Oh Hello There! </h3>
 
