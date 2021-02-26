@@ -128,6 +128,10 @@ ___
 <br>
 Also yeah, I use spotify, shut up
 
+## ASCII ART
+You can make something like that from the configs by going [here](http://patorjk.com/software/taag/)
+
+
 <p align="center">
   <img src="Screenshot/presentation-6.png">
 </p>
