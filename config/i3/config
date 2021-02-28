@@ -237,19 +237,24 @@ bindsym $mod+q kill
 ############################
   
 # volume
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+#bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+#bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
   
 # gradular volume control
-bindsym $mod+XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+XF86AudioLowerVolume exec amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3block
+#bindsym $mod+XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
+#bindsym $mod+XF86AudioLowerVolume exec amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3block
+
+bindsym XF86AudioRaiseVolume exec "bash ~/.config/i3/scripts/volume.sh up"
+bindsym XF86AudioLowerVolume exec "bash ~/.config/i3/scripts/volume.sh down"
 
 # mute
-bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
+#bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
+#
+bindsym XF86AudioMute exec "bash ~/.config/i3/scripts/volume.sh mute"
 
-bindsym XF86AudioPlay exec playerctl play                                                                                                                                   
-bindsym XF86AudioPause exec playerctl pause                                                                                                                                 
-bindsym XF86AudioNext exec playerctl next                                                                                                                                   
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous  
 
 
