@@ -32,6 +32,7 @@
     --background-mentioned: rgba(129, 161, 193, 0.1);
     --background-mentioned-hover: rgba(129, 161, 193, 0.2);
     --background-mobile-primary: #2E3440;
+    --toolbar-background: #2E3440;
 }
 
 .theme-light {
@@ -612,12 +613,12 @@ div[class="bd-toast"] {
 
 /* Sadly colors of other toasts(toast-info, toast-success, toast-warning, toast-error) can't be overridden */
 
-/** Gruvbox (dark) Highlight.js theme. Ported from https://github.com/highlightjs/highlight.js/blob/master/src/styles/gruvbox-dark.css */
+/* Nord, Nord is life */
 .theme-dark .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: #1a1815;
+    background: #2E3440;
 }
   
 .theme-dark .hljs,
@@ -625,17 +626,17 @@ div[class="bd-toast"] {
     color: #E5E9F0;
 }
   
-/* Gruvbox Red */
+/* Nord Red */
 .theme-dark
 .hljs-deletion,
 .hljs-formula,
 .hljs-keyword,
 .hljs-link,
 .hljs-selector-tag {
-    color: #674441;
+    color: #9D5057;
 }
   
-/* Gruvbox Blue */
+/* Nord Blue */
 .theme-dark
 .hljs-built_in,
 .hljs-emphasis,
@@ -647,7 +648,7 @@ div[class="bd-toast"] {
     color: #545e5e;
 }
   
-/* Gruvbox Yellow */
+/* Nord Yellow */
 .hljs-attr,
 .hljs-params,
 .hljs-template-tag,
@@ -803,7 +804,7 @@ theme-dark .selected-1Tbx07 {
 }
 
 .markup-2BOw-j code {
-    background-color: #1a1815;
+    background-color: #2E3440;
 }
 
 .role-2irmRk {
@@ -1436,6 +1437,22 @@ body #app-mount .container-1r6BKw.title-3qD0b- .children-19S4PO:hover .status-1X
 }
 body #app-mount .container-1r6BKw.title-3qD0b- .children-19S4PO:hover .nicknames-1XK4Zt {
   opacity: 1;
+}
+
+.header-2V-4Sw {
+		height: 44px;
+}
+
+.searchBar-6Kv8R2 {
+		height: 44px;
+}
+
+.flexCenter-2Y_vCg {
+		background: #2E3440;
+}
+
+.videoGrid-1khsrF {
+		background: #2E3440;
 }
 
 
