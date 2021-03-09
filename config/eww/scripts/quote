@@ -1,0 +1,17 @@
+#!/bin/bash
+num=$(echo $((1 + $RANDOM % 500)))
+
+cat ~/.config/eww/scripts/quotes/quotes.json | jq --arg num "$num" ".[$num]" | jq -r ".text" > ~/.config/eww/scripts/quotes/quote
+cat ~/.config/eww/scripts/quotes/quotes.json | jq --arg num "$num" ".[$num]" | jq -r ".author" > ~/.config/eww/scripts/quotes/author
+
+quote=$(cat ~/.config/eww/scripts/quotes/quote)
+qc=$(cat ~/.config/eww/scripts/quotes/quote | wc -c)
+rm ~/.config/eww/scripts/quotes/quote
+rm ~/.config/eww/scripts/quotes/quote-tail
+if [ "$qc" -le 58 ]; then
+	echo "$quote" > ~/.config/eww/scripts/quotes/quote
+        echo "" > ~/.config/eww/scripts/quotes/quote-tail
+else
+     	printf '%s\n' "${quote:0:${#quote}/2}" > ~/.config/eww/scripts/quotes/quote
+        printf '%s\n' "${quote:${#quote}/2}" > ~/.config/eww/scripts/quote-tail
+fi

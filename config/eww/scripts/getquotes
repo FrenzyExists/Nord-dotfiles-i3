@@ -1,0 +1,7 @@
+#!/bin/bash
+tmp_dir="quotes"
+
+if [ ! -d $tmp_dir ]; then
+        mkdir -p $tmp_dir
+fi
+cp ~/.config/eww/scripts/quotes.json ~/.config/eww/scripts/quotes/ && exec  ~/.config/eww/scripts/quote

@@ -1,0 +1,273 @@
+* {
+  all: unset;
+}
+
+window {
+  background-color: #2E3440;
+  font-family: "Rubik";
+  color: #D8DEE9;
+}
+
+button {
+  all: unset;
+  background-color: #444F65;
+  padding: 10px;
+  font-family: "FuraCode Nerd Font";
+}
+
+.musicart {
+  background-size: 150px;
+  min-height: 150px;
+  min-width: 150px;
+  margin-left: 70px;
+  margin-top: 20px;
+  margin-right: 70px;
+  border-radius: 10px;
+}
+
+.musictitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.temperature {
+		font-weight:700;
+		font-size: 44px;
+}
+
+
+.musicartist {
+  font-weight:600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.musicbtn button {
+  font-size: 13px;
+  color: #D8DEE9;
+}
+
+.musicbtn button:hover {
+  color: #88C0D0;
+}
+
+.volume scale trough {
+	all: unset;
+	background-color: #4e4e4e;
+	border-radius: 50px;
+	min-height: 5px;
+  min-width: 5px;
+  margin-bottom: 20px;
+}
+
+.volume scale trough highlight {
+	all: unset;
+	background-color: #ffd5cd;
+	color: #000000;
+	border-radius: 10px;
+}
+
+.volume slider {
+  all: unset;
+  color: #ffd5cd;
+}
+
+.number_day {
+  margin-left: 13px;
+  padding-top: 10px;
+  font-size: 35px;
+  color: #BF616A;
+  font-weight: bold;
+}
+
+.day {
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #88C0D0;
+}
+
+.day-month {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.month {
+  font-weight: bold;
+  color: #D8DEE9;
+  font-size: 17px;
+}
+
+.weather-icon-side {
+  font-size: 45px;
+  font-family: Iosevka;
+  margin: 5px 30px 5px 30px;
+}
+.weather-stat-side {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #D35D6E;
+}
+
+
+.musicart-side {
+  // background-image: url("/tmp/xmonad/spotify/cover.png");
+  background-size: 80px;
+  min-height: 70px;
+  min-width: 80px;
+  margin: 15px;
+  border-radius: 6px;
+}
+.musicinfo-side {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+  font-weight: bold;
+  // margin: 20px;
+  border-radius: 10px;
+  // border: 1px solid white;
+  min-width: 40px;
+}
+.musicbtn-side {
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.musicbtn-side button {
+  font-size: 16px;
+  padding-right: 30px;
+}
+
+.pause-play-side ~ button:hover {
+  color: #D35D6E;
+}
+.pause-play-side {
+  color: #D35D6E;
+}
+.pause-play-side:hover {
+  color: #ffd5cd;
+}
+
+.time-side {
+  margin: 20px 65px 0px 65px;
+  font-size: 60px;
+}
+.minute-side {
+  color: #D35D6E;
+}
+.day-side {
+  font-size: 16px;
+  font-weight: bold;
+  color: #90c861;
+}
+
+.sliders-side slider {
+  all: unset;
+  color: #ffd5cd;
+}
+.slider-vol-side {
+  margin-top: 12px;
+}
+.slider-vol-side scale trough highlight {
+	all: unset;
+	background-color: #BE6067;
+	color: #000000;
+	border-radius: 10px;
+}
+
+.slider-vol-side scale trough {
+	all: unset;
+	background-color: #444F65;
+	border-radius: 50px;
+	min-height: 170px;
+  min-width: 6px;
+  margin-top: 10px;
+}
+
+.label-bright-side, .label-vol-side{
+  margin-top: 10px;
+  font-family: "FuraCode Nerd Font";
+  font-size: 25px;
+}
+
+.label-vol-side {
+  color: #BE6067;
+}
+
+.search-full {
+  color: #D8DEE9;
+  font-size: 45px;
+}
+.search-full:hover {
+  color: #88C0D0;
+}
+
+.pfp {
+  background-image: url("~/.config/eww/images/pengus-hi.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  min-height: 150px;
+  min-width: 150px;
+  margin: 50px 50px 10px 80px;
+  border-radius: 500px;
+}
+.pfptxt {
+  margin-top: 30px;
+  color: #D35D6E;
+  font-size: 32px;
+}
+.subpfptxt {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.weather-icon {
+  font-size: 120px;
+  margin: 0px 0px 0px 40px;
+}
+.weather-stat {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #D35D6E;
+}
+
+.weather-quote {
+  margin: 5px 10px 10px 10px;
+  font-size: 16px;
+}
+.weather-quote-head, .weather-quote-tail {
+  font-size: 16px;
+  // font-weight: bold;
+  // color: #90c861
+}
+
+.quote-main {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  // margin-bottom: 20px;
+  margin-left: 20px;
+  color: #A5b3c0;
+}
+.quote-author {
+  font-size: 14px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  color: #84afdb;
+}
+.quote-tail {
+  font-size: 14px;
+  font-weight: bold;
+  // margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: #A5b3c0;
+}
+
+
+

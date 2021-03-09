@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $(playerctl metadata mpris:artUrl) == "" ]]; then
+		echo ~/.config/eww/scripts/music.svg
+else
+		echo $(playerctl metadata mpris:artUrl | sed "s/open\.spotify\.com/i.scdn.co/g")
+fi
