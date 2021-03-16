@@ -33,7 +33,7 @@
 ;=================================================
 
 include-file = ~/.config/polybar/colors.ini
-include-file = ~/.config/polybar/modules_2.ini
+include-file = ~/.config/polybar/modules.ini
 
 ; =============================
 ; ______                
