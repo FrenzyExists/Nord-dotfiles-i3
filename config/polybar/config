@@ -33,7 +33,7 @@
 ;=================================================
 
 include-file = ~/.config/polybar/colors.ini
-include-file = ~/.config/polybar/modules.ini
+include-file = ~/.config/polybar/modules_2.ini
 
 ; =============================
 ; ______                
@@ -50,13 +50,15 @@ include-file = ~/.config/polybar/modules.ini
 ;================================================
 [bar/base]
 enable-ipc = true
-font-0 = Rubik:style=Medium:antialias=true:size=14;3"
-font-1 = "FuraCode Nerd Font:style=Regular:size=16;3"
-font-2 = "FuraCode Nerd Font:style=Retina:size=16;3
+;font-0 = "Roboto:size=13:style:Bold;3"
+font-0 = Rubik:style=Medium:antialias=true:size=12;3"
+font-1 = "Fura Code Nerd Font:style=Medium:size=13;3"
+;font-2 = "Source Code Pro:style:Medium:size=16;3"
+font-2 = "Stick:style=Regular:size=16;3"
 
 border-size = 0
 border-color = ${colors.foreground}
-height = 23
+height = 32
 background = ${colors.background}
 
 
@@ -68,24 +70,18 @@ inherit = bar/base
 width = 100%
 padding = 2
 
-background = ${colors.foreground}
-foreground = ${colors.foreground}
-modules-left = workspaces spotify indicator wlan_signal wlan_name
-modules-right = keybindings temperature cpu memory hardisk battery pulseaudio time power
+background = ${colors.background}
+foreground = ${colors.background}
+modules-left = indicator workspaces
+modules-center = spotify
+modules-right = cpu memory pulseaudio temperature wlan_name battery time power
 
-;tray-background = ${colors.foreground}
-;tray-position = center
-;tray-padding = 1
-
-
-
-
-scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 cursor-click = pointer
 
-border-top-size = 10
-border-color = ${colors.foreground}
+border-top-size = 8
+border-color = ${colors.background}
+
 
 
 ;===========================================
